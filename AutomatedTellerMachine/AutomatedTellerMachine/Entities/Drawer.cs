@@ -31,6 +31,11 @@ namespace AutomatedTellerMachine.Entities
             Notes.Remove(note);
         }
 
+        public void RemoveNotes()
+        {
+            Notes.RemoveAt(0);
+        }
+
         public int Amount()
         {
             return Notes.Count;

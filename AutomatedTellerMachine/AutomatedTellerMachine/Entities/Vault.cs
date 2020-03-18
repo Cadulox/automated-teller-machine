@@ -30,8 +30,12 @@ namespace AutomatedTellerMachine.Entities
                 {
                     for (int i = 0; i < amount; i++)
                     {
-                        item.RemoveBill();
+                        item.RemoveNotes();
                     }
+                }
+                else if (value == item.DrawerNote && amount > item.Amount()) {
+                    Console.WriteLine();
+                    Console.WriteLine("The value is higher than the drawer!");
                 }
             }
         }

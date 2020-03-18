@@ -41,6 +41,16 @@ namespace AutomatedTellerMachine
                         Console.Clear();
                         break;
                     case 2:
+                        Console.WriteLine();
+                        Console.Write("Enter the value of the notes: ");
+                        value = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        Console.Write("Enter the amount: ");
+                        amount = int.Parse(Console.ReadLine());
+                        vault.RemoveNotes(value, amount);
+                        Console.WriteLine();
+                        Console.WriteLine("Press enter to continue...");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case 3:
                         Console.WriteLine();
