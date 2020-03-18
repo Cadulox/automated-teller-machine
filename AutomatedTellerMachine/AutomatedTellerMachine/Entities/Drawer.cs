@@ -21,12 +21,12 @@ namespace AutomatedTellerMachine.Entities
             }
         }
 
-        public void AddBill(Note note)
+        public void AddNote(Note note)
         {
             Notes.Add(note);
         }
 
-        public void RemoveBill(Note note)
+        public void RemoveNote(Note note)
         {
             Notes.Remove(note);
         }
